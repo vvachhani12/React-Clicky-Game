@@ -4,7 +4,7 @@ import './jumbotron.css';
 function jumbotron(props){
 
     return(
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron">
             {props.children}
         </div>
     );

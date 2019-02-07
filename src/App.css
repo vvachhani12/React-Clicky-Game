@@ -2,9 +2,4 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* background-color: aqua; */
-}
-
-#divContainer{
-    background-image: url("./utils/images/wall.jpg")
 }

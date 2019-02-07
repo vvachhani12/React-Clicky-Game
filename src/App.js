@@ -17,7 +17,7 @@ class App extends Component {
       id : [],
       score : 0,
       topScore : 0,
-      cardImg
+      msg: ""
     }
   }
 
@@ -50,12 +50,14 @@ class App extends Component {
         id : [],
         score: 0,
         topScore: this.checkScore(),
-        cardImg: this.state.cardImg
+        cardImg: this.state.cardImg,
+        msg:"You guessed Incorrectly and lost the game"
       })
     }else{
       this.setState({
         id: [...this.state.id, id],
-        score: this.state.score + 1
+        score: this.state.score + 1,
+        msg: "You guessed Correctly"
       })
       this.shuffle(cardImg);
     }
@@ -71,6 +73,8 @@ class App extends Component {
         <Jumbotron>
           Please select a character you want to kill. You can't kill a character more than once
           <Score score={this.state.score} topscore={this.state.topScore}/>
+          <div>{this.state.msg}</div>
+
         </Jumbotron>
         <div id="divContainer">
           <div className="container">    
