@@ -1,0 +1,28 @@
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+} */
+/* 
+.row > div[className*='col-']{
+    display: flex;
+} */
+/* 
+.card{
+    height: 300px;
+    width: 20%;
+    margin: 10px;
+    position: relative;
+    display: grid;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+} */
+
+img{
+    height: 290px;
+    width: 200px;
+    /* padding: 10px; */
+    border: 5px solid white;
+    /* outline: 5px solid black; */
+    margin: 10px;
+}
